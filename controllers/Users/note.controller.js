@@ -1,7 +1,7 @@
 import { asyncWrapper } from "../../middlewares/asyncWrapper.js";
 import { Note } from "../../models/note.model.js";
 import { User } from "../../models/user.model.js";
-import { ApiError } from "../../utils/ApiError.js";
+import { ApiError } from "../../utils/apiError.js";
 import { ApiResponse } from "../../utils/apiRes.js";
 
 export const createNote = asyncWrapper(async (req, res, next) => {

@@ -1,4 +1,4 @@
-import { ApiError } from "./ApiError.js";
+import { ApiError } from "./apiError.js";
 import { ApiResponse } from "./apiRes.js";
 
 
