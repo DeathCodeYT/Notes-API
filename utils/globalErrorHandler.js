@@ -3,6 +3,8 @@ import { ApiResponse } from "./apiRes.js";
 
 
 export const globalErrorHandler = (error, req, res, next) => {
+  console.log(error);
+  
   if (!(error instanceof ApiError)) {
     res
       .status(500)
