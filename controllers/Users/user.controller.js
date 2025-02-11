@@ -59,7 +59,7 @@ export const login = asyncWrapper(async (req, res, next) => {
     cookieOptions.domain = ".example.com";
   }
 
-  // res.cookie("accessToken", token, cookieOptions);
+  res.cookie("accessToken", token, cookieOptions);
   res.status(200).json(
     new ApiResponse(
         200,
